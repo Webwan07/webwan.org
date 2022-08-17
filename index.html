@@ -27,6 +27,14 @@
 </head>
 
 <body class="dark-theme">
+  <div class="preloader">
+
+  <div class="spinner">
+
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+ </div>
+ </div>
 
   <!--
     - #HEADER
@@ -562,6 +570,16 @@
     - custom js link
   -->
   <script src="script.js"></script>
+  
+  <script>
+
+  const container = document.querySelector('.preloader');
+
+
+window.addEventListener('load' , () =>{
+  container.classList.add('hide-preloader');
+})
+</script>
 
   <!--
     - ionicon link
